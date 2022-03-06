@@ -15,70 +15,81 @@
   </style>
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-
-  Social Media Dashboard
-  Total Followers: 23,004
-
-  Dark Mode
-
+<body class="">
+  <header class="px-5 pt-10 bg-Very-Pale-Blue rounded-b-3xl pb-20">
+    <h1 class="font-bold text-2xl text-Very-Dark-Blue">Social Media Dashboard</h1>
+    <p class="text-Dark-Grayish-Blue">Total Followers: 23,004</p>
+    
+    <div class="h-px w-full bg-Dark-Grayish-Blue my-5"></div>
   
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
+    <div class="flex justify-between items-center">
+      <p class="text-Dark-Grayish-Blue">Dark Mode</p>
+      <div class="flex justify-end items-center space-x-2">
+        <span class="text-gray-800 dark:text-gray-500">Light</span>
+        <label for="toggle" class="w-9 h-5 flex items-center bg-Dark-Grayish-Blue rounded-full p-1 cursor-pointer duration-300 ease-in-out dark:bg-gray-600">
+            <div class="toggle-dot bg-Very-Pale-Blue w-4 h-4 rounded-full shadow-md transform duration-300 ease-in-out dark:translate-x-3"></div>
+        </label>
+        <input id="toggle" type="checkbox" class="hidden" :value="darkMode" @change="darkMode = !darkMode" />
+      </div>
+    </div>
+  </header>
+  <main>
+    @nathanf
+    1987
+    Followers
+    12 Today
+  
+    @nathanf
+    1044
+    Followers
+    99 Today
+  
+    @realnathanf
+    11k
+    Followers
+    1099 Today
+  
+    Nathan F.
+    8239
+    Subscribers
+    144 Today
+  
+  
+  
+    Overview - Today
+  
+    Page Views
+    87
+    3%
+  
+    Likes
+    52
+    2%
+  
+    Likes
+    5462
+    2257%
+  
+    Profile Views
+    52k
+    1375%
+  
+    Retweets
+    117
+    303%
+  
+    Likes
+    507
+    553%
+  
+    Likes
+    107
+    19%
+  
+    Total Views
+    1407
+    12%
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
