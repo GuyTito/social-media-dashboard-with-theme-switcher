@@ -18,12 +18,12 @@
 <body class="">
   <header class="px-5 pt-10 bg-Very-Pale-Blue rounded-b-3xl pb-20">
     <h1 class="font-bold text-2xl text-Very-Dark-Blue">Social Media Dashboard</h1>
-    <p class="text-Dark-Grayish-Blue">Total Followers: 23,004</p>
+    <p class="text-Dark-Grayish-Blue font-bold text-sm">Total Followers: 23,004</p>
     
     <div class="h-px w-full bg-Dark-Grayish-Blue my-5"></div>
   
     <div class="flex justify-between items-center">
-      <p class="text-Dark-Grayish-Blue">Dark Mode</p>
+      <p class="text-Dark-Grayish-Blue font-bold text-sm">Dark Mode</p>
       <div class="flex justify-end items-center space-x-2">
         <span class="text-gray-800 dark:text-gray-500">Light</span>
         <label for="toggle" class="w-9 h-5 flex items-center bg-Dark-Grayish-Blue rounded-full p-1 cursor-pointer duration-300 ease-in-out dark:bg-gray-600">
@@ -33,11 +33,25 @@
       </div>
     </div>
   </header>
-  <main>
-    @nathanf
-    1987
-    Followers
-    12 Today
+  <main class="-mt-10 mx-5">
+    <div class="grid place-content-center text-center bg-Light-Grayish-Blue border-t-4 rounded border-t-Facebook space-y-5 py-5">
+      <div class="text-Dark-Grayish-Blue font-bold flex justify-center items-center space-x-1 text-xs">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+          <path fill="#178FF5" d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z"/>
+        </svg>
+        <span>@nathanf</span>
+      </div>
+      <p class="flex flex-col">
+        <span class="font-bold text-5xl">1987</span> 
+        <span class="uppercase tracking-[0.3em] text-xs text-Dark-Grayish-Blue">Followers</span>
+      </p>
+      <p class="text-Lime-Green text-xs font-bold flex justify-center space-x-1 items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4">
+          <path fill="#1EB589" fill-rule="evenodd" d="M0 4l4-4 4 4z"/>
+        </svg>
+        <span>12 Today</span>
+      </p>
+    </div>
   
     @nathanf
     1044
