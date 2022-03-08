@@ -9,9 +9,7 @@ module.exports = {
         'Bright-Red': 'hsl(356, 69%, 56%)',
         'Facebook': 'hsl(208, 92%, 53%)',
         'Twitter': 'hsl(203, 89%, 53%)',
-        'Instagram': 'linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%))',
         'YouTube': 'hsl(348, 97%, 39%)',
-        'Toggle-dark': 'linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%))',
         'Toggle-light': 'hsl(230, 22%, 74%)',
         'Very-Dark-Blue': 'hsl(230, 17%, 14%)',
         'Very-Dark-Blue-pattern': 'hsl(232, 19%, 15%)',
@@ -24,6 +22,10 @@ module.exports = {
       fontFamily: {
         sans : ["'Inter'", ...defaultTheme.fontFamily.sans],
       },
+      backgroundImage: {
+        'Instagram': 'linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%))',
+        'Toggle-dark': 'linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%))',
+      }
     },
   },
   plugins: [],
