@@ -484,6 +484,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: -2.5rem;
 }
 
+.mt-10{
+  margin-top: 2.5rem;
+}
+
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
+.inline{
+  display: inline;
+}
+
 .flex{
   display: flex;
 }
@@ -496,8 +508,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.h-px{
-  height: 1px;
+.h-\[0\.5px\]{
+  height: 0.5px;
 }
 
 .h-5{
@@ -540,22 +552,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: center;
 }
 
-.justify-end{
-  justify-content: flex-end;
-}
-
 .justify-center{
   justify-content: center;
 }
 
 .justify-between{
   justify-content: space-between;
-}
-
-.space-x-2 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-y-5 > :not([hidden]) ~ :not([hidden]){
@@ -583,6 +585,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-bottom-left-radius: 1.5rem;
 }
 
+.rounded-b{
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
 .border-t-4{
   border-top-width: 4px;
 }
@@ -595,10 +602,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-t-Twitter{
   --tw-border-opacity: 1;
   border-top-color: hsl(203 89% 53% / var(--tw-border-opacity));
-}
-
-.border-t-Instagram{
-  border-top-color: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
 }
 
 .border-t-YouTube{
@@ -626,8 +629,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: hsl(227 47% 96% / var(--tw-bg-opacity));
 }
 
+.bg-Instagram{
+  background-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+
 .p-1{
   padding: 0.25rem;
+}
+
+.p-5{
+  padding: 1.25rem;
 }
 
 .px-5{
@@ -646,6 +657,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-20{
   padding-bottom: 5rem;
+}
+
+.pt-\[3\.5px\]{
+  padding-top: 3.5px;
 }
 
 .text-center{
@@ -672,6 +687,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -694,11 +714,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: hsl(228 12% 44% / var(--tw-text-opacity));
 }
 
-.text-gray-800{
-  --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
-}
-
 .text-Lime-Green{
   --tw-text-opacity: 1;
   color: hsl(163 72% 41% / var(--tw-text-opacity));
@@ -709,10 +724,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: hsl(356 69% 56% / var(--tw-text-opacity));
 }
 
-.shadow-md{
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+.underline{
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .duration-300{
@@ -723,18 +737,45 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media (prefers-color-scheme: dark){
-  .dark\:translate-x-3{
-    --tw-translate-x: 0.75rem;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
+.hover\:font-bold:hover{
+  font-weight: 700;
+}
 
-  .dark\:bg-Toggle-dark{
-    background-color: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
-  }
+.dark .dark\:translate-x-3{
+  --tw-translate-x: 0.75rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 
-  .dark\:text-gray-500{
-    --tw-text-opacity: 1;
-    color: rgb(107 114 128 / var(--tw-text-opacity));
-  }
+.dark .dark\:bg-Very-Dark-Blue{
+  --tw-bg-opacity: 1;
+  background-color: hsl(230 17% 14% / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-Very-Dark-Blue-pattern{
+  --tw-bg-opacity: 1;
+  background-color: hsl(232 19% 15% / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-Desaturated-Blue{
+  --tw-bg-opacity: 1;
+  background-color: hsl(228 34% 66% / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-Dark-Desaturated-Blue{
+  --tw-bg-opacity: 1;
+  background-color: hsl(228 28% 20% / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-Toggle-dark{
+  background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+.dark .dark\:text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.dark .dark\:text-Desaturated-Blue{
+  --tw-text-opacity: 1;
+  color: hsl(228 34% 66% / var(--tw-text-opacity));
 }
