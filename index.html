@@ -22,12 +22,14 @@
 </script>
 </head>
 <body class="dark:bg-Very-Dark-Blue">
-  <header class="px-5 pt-10 bg-Very-Pale-Blue dark:bg-Very-Dark-Blue-pattern rounded-b-3xl pb-20">
-    <h1 class="font-bold text-2xl text-Very-Dark-Blue dark:text-white">Social Media Dashboard</h1>
-    <p class="text-Dark-Grayish-Blue dark:text-Desaturated-Blue font-bold text-sm">Total Followers: 23,004</p>
-    <div class="h-[0.5px] w-full bg-Dark-Grayish-Blue dark:bg-Desaturated-Blue my-5"></div>
-    <div class="flex justify-between items-center">
-      <p class="text-Dark-Grayish-Blue dark:text-Desaturated-Blue font-bold text-sm">Dark Mode</p>
+  <header class="px-5 pt-10 bg-Very-Pale-Blue dark:bg-Very-Dark-Blue-pattern rounded-b-3xl pb-20 sm:flex justify-between">
+    <div class="">
+      <h1 class="font-bold text-2xl text-Very-Dark-Blue dark:text-white">Social Media Dashboard</h1>
+      <p class="text-Dark-Grayish-Blue dark:text-Desaturated-Blue font-bold text-sm">Total Followers: 23,004</p>
+    </div>
+    <div class="h-[0.5px] w-full bg-Dark-Grayish-Blue dark:bg-Desaturated-Blue my-5 sm:hidden"></div>
+    <div class="flex justify-between items-center sm:mb-4 sm:space-x-3">
+      <p class="text-Dark-Grayish-Blue dark:text-Desaturated-Blue sm:dark:text-white font-bold text-sm">Dark Mode</p>
       <div>
         <input id="toggle" name="toggle" type="checkbox" class="hidden" />
         <label for="toggle" class="w-9 h-5 flex items-center bg-Toggle-light dark:bg-Toggle-dark rounded-full p-1 cursor-pointer duration-300 ease-in-out">
