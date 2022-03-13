@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://)
-- Live Site URL: [Add live site URL here](https://)
+- [Solution](https://www.frontendmentor.io/solutions/responsive-dashboard-with-grid-eI7AZuRWp)
+- [Live Site](https://sm-dashboard-fm.netlify.app/)
 
 ## My process
 
